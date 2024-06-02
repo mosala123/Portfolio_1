@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- start header -->
+<div class="header">
+
+<div class="left-head">
+    <h3>Portfolio</h3>
+</div>
+
+<div class="center-head">
+    <h3  >menu</h3>
+     <i class="fa-solid fa-bars" id="menu"></i> 
+</div>
+
+
+<div class="right-head">
+
+    <div class="head-right-head">
+        <div class="logo">Portfolio</div>
+        <div class="closee">X</div>
+    </div> 
+
+    <div class="center-right-head">
+        <nav>
+            <ul>
+                <li><a href="#">home </a></li>
+                <li><a href="#">about </a></li>
+                <li><a href="#">skills</a></li>
+                <li><a href="#">mywork</a></li>
+            </ul>
+        </nav>
+    </div> 
+
+
+    <div class="botton-right-head">
+        <div class="p">
+            Welcome To My Portfolio, I Did This Website To See 
+            All My Projects, I Wish This Portfolio Like You
+        </div>
+        <div class="socialmedia">
+       <a href="#"><i class="fa-brands fa-facebook"></i></a>
+       <a href="#"><i class="fa-brands fa-github"></i></a>
+       <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div> 
+
+</div>
+
+
+</div>
+<!-- end header -->
+<!-- ----------------------------------------- -->
+
+
+
+ 
+
+
+<!-- strat home -->
+<div class="homepage   container-fluid d-flex    " style="height: 100vh; width: 100%;  ">
+    <div class="row home">
+        <div class="col-md-6 left-home" style=" padding: 20px;">
+            <h4>hello there,<br>
+                  My Name's   <span class="name">Mohamed-Ibrahim </span><br>
+                And I'm a <span id="element"> </span></h4>
+            <p>Welcome To My Portfolio, I Did This Website To Showcase All My Projects,
+                I Hope You Like It</p>
+            <div class="my-cv">
+                <a href="#" class="btn btn-primary">Download CV</a>
+            </div>
+        </div>
+        <div class="col-md-6 right-home" style="  padding: 20px;">
+            <div class="profile-img-container mx-auto">
+                <img src="images/IMG_20230422_222502.jpg" alt="Profile Image" class="profile-img" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- end home -->
+
+<!-- ------------------ -->
+
+
+
+
+
+
+
+
+<!-- first sections  -->
+ 
+
+<div class="aboutme">
+    <div class="container">
+        <div class="text-center">
+            <h1>About <span>Me</span></h1>
+        </div>
+        <div class="aboutmehome">
+            <div class="leftaboutme">
+                <div class="cadrds">
+                    <img src="images/IMG_20230422_222502.jpg" alt="mosalah">
+                    <h2>mohamed-salah</h2>
+                    <p>4087377moe.dog@gamail.com</p>
+                    <div class="mt-3">
+                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <a href="#" class="btn btn-primary">Download CV</a>
+                </div>
+            </div>
+            <div class="rightaboutme">
+                <h2><span style="color: #00bfff;">my</span>  skills</h2>
+                <div class="skills">
+                    <h3>html</h3>
+                    <div class="progress">
+                        <span style="width: 0; ;" data-width="70%"></span>
+                    </div>
+                    <h3>css</h3>
+                    <div class="progress">
+                        <span style="width: 0;" data-width="90%"></span>
+                    </div>
+                    <h3>boostrap</h3>
+                    <div class="progress">
+                        <span style="width: 0;" data-width="70%"></span>
+                    </div>
+                    <h3>javascript</h3>
+                    <div class="progress">
+                        <span style="width: 0;" data-width="70%"></span>
+                    </div>
+                </div>
+                <div class="pp"> 
+                <p>1- it's my skills, and i'm working on myself to learn more experience..</p>
+                <p>2- Created pixel-perfect website layouts from design mockups using HTML, CSS, JavaScript..</p>
+                <p>3- Developed and maintained front-end code for complex web applications using React.js and Redux.</p>
+                <p>4- Contributed to the development of a customer dashboard, providing real-time analytics and data visualization..</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+<!-- end  sections  -->
+<!-- ---------------------------------- -->
+
+
+
+
+
+
+
+<!-- strat two sections  -->
+<div class="myworking"> 
+<div class=" twosections container my-5">
+    <div class="text-center mb-4">
+        <h1 class="text-light"><span style="font-size: 40px;">my</span> work</h1>
+        <div class="filter-buttons">
+        <p   class="active mx-2" id="All"  onclick="filterCards('all')">all</p>
+        <p   class="mx-2" id="html_css" onclick="filterCards('html_css')">html&css</p>
+        <p   class="mx-2" id="bootstrap" onclick="filterCards('bootstrap')">bootstrap</p>
+        <p   class="mx-2" id="javascript" onclick="filterCards('javascript')">javascript</p>
+  </div> 
+    <div class="row" style="padding:  10px 55px ;">
+        <!-- تكرار هذا القسم لكل بطاقة -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-category="html_css">
+    <div class="card ">
+        <img src="images/Screenshot 2024-06-01 004319.jpg" class="card-img-top" alt="">
+        <div class="card-body  "  style="text-align: left;">
+            <p class=" text-center text-custom"> التنفيذ المعاصر <span> javascript</span></p>
+            <p class="carcard-textd-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, enim.</p>
+        </div>
+        <div class="card-footer myworklink d-flex justify-content-around">
+            <a href="#" class="btn Preview " >Preview</a>
+            <a href="#" class="btn GitHub">GitHub</a>
+        </div>
+    </div>
+</div>
+  
+        <!-- تكرار هذا القسم لكل بطاقة -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-category="javascript">
+    <div class="card  ">
+        <img src="images/المسلم.jpg" class="card-img-top" alt="">
+        <div class="card-body"  style="text-align: left;">
+            <p class="card-text text-custom"> website المسلم<span> javascript</span></p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, facere?</p>
+        </div>
+        <div class="card-footer myworklink d-flex justify-content-around">
+            <a href="#" class="btn Preview " >Preview</a>
+            <a href="#" class="btn GitHub">GitHub</a>
+        </div>
+    </div>
+</div>
+ <!-- تكرار هذا القسم لكل بطاقة -->
+ <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-category="javascript">
+    <div class="card  ">
+        <img src="images/cruds.jpg" class="card-img-top" alt="">
+        <div class="card-body"  style="text-align: left;">
+            <p class="card-text text-custom">website cruds<span> javascript</span></p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, facere?</p>
+        </div>
+        <div class="card-footer myworklink d-flex justify-content-around">
+            <a href="#" class="btn Preview " >Preview</a>
+            <a href="#" class="btn GitHub">GitHub</a>
+        </div>
+    </div>
+</div>
+  <!-- تكرار هذا القسم لكل بطاقة -->
+  <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-category="html_css">
+    <div class="card ">
+        <img src="images/avater.jpg" class="card-img-top" alt="">
+        <div class="card-body"  style="text-align: left;">
+            <p class="card-text text-custom">website avater<span> html_css</span></p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, facere?</p>
+        </div>
+        <div class="card-footer myworklink d-flex justify-content-around">
+            <a href="#" class="btn Preview " >Preview</a>
+            <a href="#" class="btn GitHub">GitHub</a>
+        </div>
+    </div>
+</div>
+ <!-- تكرار هذا القسم لكل بطاقة -->
+ <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-category="javascript">
+    <div class="card  ">
+        <img src="images/calc.jpg" class="card-img-top" alt="">
+        <div class="card-body"  style="text-align: left;">
+            <p class="card-text text-custom">website calc<span> javascript</span></p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, facere?</p>
+        </div>
+        <div class="card-footer myworklink d-flex justify-content-around">
+            <a href="#" class="btn Preview " >Preview</a>
+            <a href="#" class="btn GitHub">GitHub</a>
+        </div>
+    </div>
+</div>
+ 
+ <!-- تكرار هذا القسم لكل بطاقة -->
+ <div class="col-lg-4 col-md-6 col-sm-12 mb-4"   data-category="bootstrap">
+    <div class="card  ">
+        <img src="images/dargon.jpg" class="card-img-top" alt="">
+        <div class="card-body"  style="text-align: left;">
+            <p class="card-text text-custom"> website dargon<span> bootstrap</span></p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, facere?</p>
+        </div>
+        <div class="card-footer myworklink d-flex justify-content-around">
+            <a href="#" class="btn Preview " >Preview</a>
+            <a href="#" class="btn GitHub">GitHub</a>
+        </div>
+    </div>
+</div>
+ <!-- تكرار هذا القسم لكل بطاقة -->
+ <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-category="javascript">
+    <div class="card  ">
+        <img src="images/drog&drop.jpg" class="card-img-top" alt="">
+        <div class="card-body"  style="text-align: left;">
+            <p class="card-text text-custom">drog&drop<span> javascript</span></p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, facere?</p>
+        </div>
+        <div class="card-footer myworklink d-flex justify-content-around">
+            <a href="#" class="btn Preview " >Preview</a>
+            <a href="#" class="btn GitHub">GitHub</a>
+        </div>
+    </div>
+</div>
+ <!-- تكرار هذا القسم لكل بطاقة -->
+ <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-category="html_css">
+    <div class="card  ">
+        <img src="images/drow.css.jpg" class="card-img-top" alt="">
+        <div class="card-body"  style="text-align: left;">
+            <p class="card-text text-custom"> drow css<span> html_css</span></p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, facere?</p>
+        </div>
+        <div class="card-footer myworklink d-flex justify-content-around">
+            <a href="#" class="btn Preview " >Preview</a>
+            <a href="#" class="btn GitHub">GitHub</a>
+        </div>
+    </div>
+</div>
+ <!-- تكرار هذا القسم لكل بطاقة -->
+ <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-category="javascript">
+    <div class="card  ">
+        <img src="images/ofline or online.jpg" class="card-img-top" alt="">
+        <div class="card-body"  style="text-align: left;">
+            <p class="card-text text-custom">ofline or online<span> javascript</span> </p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, facere?</p>
+        </div>
+        <div class="card-footer myworklink d-flex justify-content-around">
+            <a href="#" class="btn Preview " >Preview</a>
+            <a href="#" class="btn GitHub">GitHub</a>
+        </div>
+    </div>
+</div>
+ <!-- تكرار هذا القسم لكل بطاقة -->
+ <div class="col-lg-4 col-md-6 col-sm-12 mb-4"   data-category="bootstrap" >
+    <div class="card  ">
+        <img src="images/palestine.jpg" class="card-img-top" alt="">
+        <div class="card-body"  style="text-align: left;">
+            <p class="card-text text-custom">website palestine <span> bootstrap</span> </p>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, expedita.</p>
+        </div>
+        <div class="card-footer myworklink d-flex justify-content-around">
+            <a href="#" class="btn Preview " >Preview</a>
+            <a href="#" class="btn GitHub">GitHub</a>
+        </div>
+    </div>
+</div>
+<!-- تكرار هذا القسم لكل بطاقة -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-category="html_css">
+    <div class="card  "  style="text-align: left;">
+        <img src="images/resturent.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+            <p class="card-text text-custom">website resturent <span> html_css</span> </p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, nostrum!</p>
+        </div>
+        <div class="card-footer myworklink d-flex justify-content-around">
+            <a href="#" class="btn Preview " >Preview</a>
+            <a href="#" class="btn GitHub">GitHub</a>
+        </div>
+    </div>
+</div>
+<!-- تكرار هذا القسم لكل بطاقة -->
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-category="html_css">
+    <div class="card  ">
+        <img src="images/shofiaa.jpg" class="card-img-top" alt="">
+        <div class="card-body"  style="text-align: left;">
+            <p class="card-text text-custom"> Website shofiaa <span> html_css</span> </p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nihil!</p>
+        </div>
+        <div class="card-footer myworklink d-flex justify-content-around">
+            <a href="#" class="btn Preview " >Preview</a>
+            <a href="#" class="btn GitHub">GitHub</a>
+        </div>
+    </div>
+</div>
+   <!-- تكرار هذا القسم لكل بطاقة -->
+   <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-category="javascript">
+    <div class="card  ">
+        <img src="images/coffe hop.jpg" class="card-img-top" alt="">
+        <div class="card-body"  style="text-align: left;">
+            <p class="card-text text-custom">website coffe <span> javascript</span></p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, facere?</p>
+        </div>
+        <div class="card-footer myworklink d-flex justify-content-around">
+            <a href="#" class="btn Preview " >Preview</a>
+            <a href="#" class="btn GitHub">GitHub</a>
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="socialmediaa container text-center">
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-github"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+     </div>
+     <p class="text-center " style="color: white;padding: 0 70px ;">All Rights Reserved | This Template Is Made With By<span style="color: #00bfff;cursor: pointer;">  Mohamed-Ibrahim </span></p>
+
+</div>
+<!-- end  two sections  -->
+
+
+
+
+
+<!-- end -->
+
+
+<div class="end d-flex justify-content-center align-items-center">
+    <a href="#"><i class="fa-solid fa-house"></i></a>
+    <a href="#"><i class="fa-solid fa-circle-info"></i></a>
+    <a href="#"><i class="fa-solid fa-caret-up"></i></a>
+    <a href="#"><i class="fa-solid fa-user"></i></a>
+</div>
+<!--  -->
+
+ 
+
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="main.js"></script>
+<script src="bootstrap-4.0.0-dist/js/popper.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/jquery-3.7.1.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+</body>
+</html>

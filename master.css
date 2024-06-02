@@ -1,0 +1,416 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* color: #00bfff; */
+
+}
+body{
+    background-color: #000000 ;
+
+   
+}
+/* strat header */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px ;
+    width: 100%;
+    z-index: 9999;
+    position: fixed;
+    color:  #00bfff;
+    text-transform: capitalize;
+    font-family: monospace;
+    background-color: #66666667;
+    backdrop-filter: blur(50px);
+    border-radius:   0 0  10px 10px   ;
+    font-weight: 700;
+   
+
+}
+.center-head{
+    display: flex;
+    align-items: center;
+    color:#00bfff;
+    font-family: monospace;
+ 
+}
+.center-head i{
+    margin: 0 18px;
+    font-size: 26px ;
+    color: #55555592;
+}
+
+.right-head{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-direction: column;
+     background-color: #333;
+     color: #0b0c10;
+     position: absolute;
+     top: 0;
+     right: 0;
+     height: 100vh;
+     width: 400px ;
+     padding:  50px 10px ;
+     font-family: monospace;
+     color: white;
+     z-index: 99999;
+      transform: translateX(200%);
+      transition: transform 0.8s ease-in-out; 
+      padding-bottom: 50px;
+}
+.show{
+    transform: translateX(0);
+    
+}
+.head-right-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 48px ;
+    position: relative;
+    font-size: 30px;
+}
+.head-right-head .logo{
+    color: #00bfff;
+    font-weight: 700;
+}
+.head-right-head .closee{
+    font-size: 30px;
+    cursor: pointer;
+}
+.head-right-head::before{
+    content: "";
+    width: 79%;
+    height: 1px;
+    top: 80px;
+    background-color: white;
+    position: absolute;
+}
+.center-right-head ul li{
+    list-style: none;
+    text-decoration: none;
+}
+.center-right-head ul li a{
+    text-decoration: none;
+    padding: 10px 0 ;
+    color: white;
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.4s ease ;
+    position: relative;
+}
+ 
+.center-right-head ul li a:hover{
+    color: #00bfff;
+}
+.botton-right-head{
+    padding: 10px 30px ;
+    text-align: center;
+    color: wheat;
+    font-weight: 500;
+    position: relative;
+}
+.botton-right-head i{
+    font-size: 28px;
+    margin: 15px 10px ;
+    color: white;
+}
+.botton-right-head::after{
+    content: "";
+    top:  0px;
+    width: 80%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    left: 35px;
+}
+.p{
+    padding-top: 30px;
+}
+.botton-right-head i:hover{
+
+color: #00bfff;
+}
+/* end header */
+
+
+
+ 
+
+
+/* strat home */
+.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    background-color: #000000 ;
+    color: white;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px  20px  ;
+}
+#element{
+    color: #00bfff;
+}
+ 
+
+.profile-img-container {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background: #00bfff; /* لون الخلفية الدائرية */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    transition: 0.4s ease ;
+}
+.profile-img:hover{
+    width: 99%;
+    height: 99%;
+    border-radius: 50%; 
+}
+
+/* end home  */
+/* ----------------------- */
+
+/* strat first sections  */
+.aboutme{
+    background-color: #000000f7 ;
+    padding:  20px 0 ;
+    color: white;
+    font-family: monospace;
+}
+.aboutme h1 span {
+    color: #00bfff;
+}
+.aboutme img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0  0 ;
+}
+.aboutmehome {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 20px;
+    text-transform: capitalize;
+    flex-wrap: wrap;
+}
+.cadrds {
+    border: 2px solid #777;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 2px 1px 22px 4px  #66666658;
+    transition: 0.4s ease;
+}
+.cadrds:hover {
+    box-shadow: 2px 1px 22px 4px  #66666683;
+    border: 1px solid;
+}
+.aboutme h2{
+     padding:  8px 0 ;
+}
+.leftaboutme i {
+    margin: 10px 0;
+    font-size: 27px;
+    color: white;
+    padding-bottom: 5px;
+}
+.progress {
+    width: 330px;
+   height: 225px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    margin: 10px 0  ;
+}
+.progress span {
+    background-color: #00bfff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius:  0 20px  20px 0  ;
+    transition: width 2s ease;
+}
+.rightaboutme {
+    padding:  20px 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto ;
+    font-family: sans-serif;
+}
+.rightaboutme .pp {
+   margin: 20px auto  0;
+}
+
+
+/* end  first sections  */
+
+/* ------------------------------------ */
+
+ 
+
+/* strat two sections  */
+.myworking {
+    background-color: #000000;
+    margin: -50px 0  0 0 ;
+    padding:  20px 0 ;
+    color: #000000;
+    font-size: 17px;
+}
+.twosections{
+    text-transform: capitalize;
+   
+}
+.twosections span{
+    color: #00bfff;
+}
+.myworking .custom-card {
+    width: 100%;
+    height: 300px; /* تحديد ارتفاع البطاقات */
+  }
+  
+.twosections .Preview
+,.twosections .GitHub{
+    font-size: 20px;
+    font-weight: 500;
+     transition: 0.4s ease;
+    padding: 10px ;
+    border-radius: 20px ;
+}
+.twosections .Preview:hover
+,.GitHub:hover{
+    border:  2px solid #55555592;
+    background-color: #55555592;
+    color: white;
+}
+
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;  
+    flex-wrap: wrap;
+    color: white;
+    transition: 0.4s ease;
+    padding:  20px 0 ;
+}
+ 
+.filter-buttons p {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+ 
+.filter-buttons p.active {
+    background-color: #00bfff;
+    color: white;
+}
+
+.text-custom {
+    font-weight: 600;
+    text-align: center;
+    background-color: #66666667;
+    backdrop-filter: blur(50px);
+    padding: 0;
+    flex-wrap: nowrap;
+}
+.twosections   span{
+    color: #00bfff;
+     font-weight: 500;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+.socialmediaa a{
+     text-decoration: none;
+     color: white;
+     font-size: 24px;
+     transition: 0.4s ease;
+     margin: 0 10px ;
+}
+.socialmediaa a:hover{
+     box-shadow: 1px 1px 10px 1px #00bfff;
+    color: #00bfff;
+    background-color: transparent;
+}
+ 
+.twosections .card{
+    padding: 2px ;
+    height: 410px;
+    border-radius: 10px;
+}
+.twosections .card  img{
+    width: 100%;
+    height: 250px;
+    background-color: red;
+    object-fit: cover;
+    border-radius:  10px  10px  0 0  ;
+    border: 6px solid white;
+    transition: 0.4s ease;
+}
+.twosections .card  img:hover{
+    transform: scale(1.019);
+
+}
+
+/* end  two sections  */
+
+
+
+
+/* end */
+
+.end {
+    background-color: #666;
+    border-radius: 10px;
+    bottom: 100px;
+    padding: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    z-index: 1000;
+    padding: 10px  20px ;
+}
+.end a {
+    margin: 0 20px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+.end a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+ 
+
+
+
+ 
